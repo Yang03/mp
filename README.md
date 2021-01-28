@@ -1,19 +1,16 @@
 # mp
 
+react-reconciler
 
-https://github.com/PepperYan/react-miniapp
-
-https://github.com/yisar/fard2
-
-
-https://github.com/NervJS/taro/tree/master/packages/taro-transformer-wx
-
-https://astexplorer.net/
-
-https://github.com/jamiebuilds/babel-handbook/blob/master/translations/zh-Hans/plugin-handbook.md#toc-scope
-
-• asr explorer
- https://astexplorer.net/
-• alita
-https://github.com/areslabs/alita
-https://zhuanlan.zhihu.com/p/69333351
+| 协调阶段                 | 开始提交         | 提交阶段                  | 提交完成         |
+|-------------------------|----------------|--------------------------|-----------------|
+| createInstance          | prepareCommit  | appendChild              | resetAfterCommit|
+| createTextInstance      |                | appendChildToContainer   | commitMount     |
+| shouldSetTextContent    |                | insertBefore             |                 |
+| appendInitialChild      |                | insertInContainerBefore  |                 |
+| finalizeInitialChildren |                | removeChild              |                 |
+| prepareUpdate           |                | removeChildFromContainer |                 |
+|                         |                | commitTextUpdate         |                 |
+|                         |                | commitUpdate             |                 |
+|                         |                | resetTextContent         |                 |
+|                         |                | clearContainer         |                 |
