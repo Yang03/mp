@@ -18,6 +18,14 @@
             </block>
         </view>
     </block>
-  
+
+    <block wx:if="{{item.type === 'text'}}">
+        <text bind:touchstart="{{item.props.onClick || ''}}">
+            <block wx:for="{{item.children}}" wx:key="">
+              <template is="REACT_MINI_APP_TPL_<%=(i + 1)%>" data="{{item}}"/>
+            </block>
+        </text>
+    </block>
+
 </template>
 <% } %>

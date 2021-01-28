@@ -18,7 +18,15 @@
             </block>
         </view>
     </block>
-  
+
+    <block wx:if="{{item.type === 'text'}}">
+        <text bind:touchstart="{{item.props.onClick || ''}}">
+            <block wx:for="{{item.children}}" wx:key="">
+              <template is="REACT_MINI_APP_TPL_1" data="{{item}}"/>
+            </block>
+        </text>
+    </block>
+
 </template>
 
 <template name="REACT_MINI_APP_TPL_1">
@@ -34,7 +42,15 @@
             </block>
         </view>
     </block>
-  
+
+    <block wx:if="{{item.type === 'text'}}">
+        <text bind:touchstart="{{item.props.onClick || ''}}">
+            <block wx:for="{{item.children}}" wx:key="">
+              <template is="REACT_MINI_APP_TPL_2" data="{{item}}"/>
+            </block>
+        </text>
+    </block>
+
 </template>
 
 <template name="REACT_MINI_APP_TPL_2">
@@ -50,7 +66,15 @@
             </block>
         </view>
     </block>
-  
+
+    <block wx:if="{{item.type === 'text'}}">
+        <text bind:touchstart="{{item.props.onClick || ''}}">
+            <block wx:for="{{item.children}}" wx:key="">
+              <template is="REACT_MINI_APP_TPL_3" data="{{item}}"/>
+            </block>
+        </text>
+    </block>
+
 </template>
 
 <template name="REACT_MINI_APP_TPL_3">
@@ -66,7 +90,15 @@
             </block>
         </view>
     </block>
-  
+
+    <block wx:if="{{item.type === 'text'}}">
+        <text bind:touchstart="{{item.props.onClick || ''}}">
+            <block wx:for="{{item.children}}" wx:key="">
+              <template is="REACT_MINI_APP_TPL_4" data="{{item}}"/>
+            </block>
+        </text>
+    </block>
+
 </template>
 
 <template name="REACT_MINI_APP_TPL_4">
@@ -82,7 +114,15 @@
             </block>
         </view>
     </block>
-  
+
+    <block wx:if="{{item.type === 'text'}}">
+        <text bind:touchstart="{{item.props.onClick || ''}}">
+            <block wx:for="{{item.children}}" wx:key="">
+              <template is="REACT_MINI_APP_TPL_5" data="{{item}}"/>
+            </block>
+        </text>
+    </block>
+
 </template>
 
 <template name="REACT_MINI_APP_TPL_5">
@@ -98,7 +138,15 @@
             </block>
         </view>
     </block>
-  
+
+    <block wx:if="{{item.type === 'text'}}">
+        <text bind:touchstart="{{item.props.onClick || ''}}">
+            <block wx:for="{{item.children}}" wx:key="">
+              <template is="REACT_MINI_APP_TPL_6" data="{{item}}"/>
+            </block>
+        </text>
+    </block>
+
 </template>
 
 <template name="REACT_MINI_APP_TPL_6">
@@ -114,7 +162,15 @@
             </block>
         </view>
     </block>
-  
+
+    <block wx:if="{{item.type === 'text'}}">
+        <text bind:touchstart="{{item.props.onClick || ''}}">
+            <block wx:for="{{item.children}}" wx:key="">
+              <template is="REACT_MINI_APP_TPL_7" data="{{item}}"/>
+            </block>
+        </text>
+    </block>
+
 </template>
 
 <template name="REACT_MINI_APP_TPL_7">
@@ -130,7 +186,15 @@
             </block>
         </view>
     </block>
-  
+
+    <block wx:if="{{item.type === 'text'}}">
+        <text bind:touchstart="{{item.props.onClick || ''}}">
+            <block wx:for="{{item.children}}" wx:key="">
+              <template is="REACT_MINI_APP_TPL_8" data="{{item}}"/>
+            </block>
+        </text>
+    </block>
+
 </template>
 
 <template name="REACT_MINI_APP_TPL_8">
@@ -146,7 +210,15 @@
             </block>
         </view>
     </block>
-  
+
+    <block wx:if="{{item.type === 'text'}}">
+        <text bind:touchstart="{{item.props.onClick || ''}}">
+            <block wx:for="{{item.children}}" wx:key="">
+              <template is="REACT_MINI_APP_TPL_9" data="{{item}}"/>
+            </block>
+        </text>
+    </block>
+
 </template>
 
 <template name="REACT_MINI_APP_TPL_9">
@@ -162,7 +234,15 @@
             </block>
         </view>
     </block>
-  
+
+    <block wx:if="{{item.type === 'text'}}">
+        <text bind:touchstart="{{item.props.onClick || ''}}">
+            <block wx:for="{{item.children}}" wx:key="">
+              <template is="REACT_MINI_APP_TPL_10" data="{{item}}"/>
+            </block>
+        </text>
+    </block>
+
 </template>
 
 <template name="REACT_MINI_APP_TPL_10">
@@ -178,7 +258,15 @@
             </block>
         </view>
     </block>
-  
+
+    <block wx:if="{{item.type === 'text'}}">
+        <text bind:touchstart="{{item.props.onClick || ''}}">
+            <block wx:for="{{item.children}}" wx:key="">
+              <template is="REACT_MINI_APP_TPL_11" data="{{item}}"/>
+            </block>
+        </text>
+    </block>
+
 </template>
 
 <template name="REACT_MINI_APP_TPL_11">
@@ -194,7 +282,15 @@
             </block>
         </view>
     </block>
-  
+
+    <block wx:if="{{item.type === 'text'}}">
+        <text bind:touchstart="{{item.props.onClick || ''}}">
+            <block wx:for="{{item.children}}" wx:key="">
+              <template is="REACT_MINI_APP_TPL_12" data="{{item}}"/>
+            </block>
+        </text>
+    </block>
+
 </template>
 
 <template name="REACT_MINI_APP_TPL_12">
@@ -210,7 +306,15 @@
             </block>
         </view>
     </block>
-  
+
+    <block wx:if="{{item.type === 'text'}}">
+        <text bind:touchstart="{{item.props.onClick || ''}}">
+            <block wx:for="{{item.children}}" wx:key="">
+              <template is="REACT_MINI_APP_TPL_13" data="{{item}}"/>
+            </block>
+        </text>
+    </block>
+
 </template>
 
 <template name="REACT_MINI_APP_TPL_13">
@@ -226,7 +330,15 @@
             </block>
         </view>
     </block>
-  
+
+    <block wx:if="{{item.type === 'text'}}">
+        <text bind:touchstart="{{item.props.onClick || ''}}">
+            <block wx:for="{{item.children}}" wx:key="">
+              <template is="REACT_MINI_APP_TPL_14" data="{{item}}"/>
+            </block>
+        </text>
+    </block>
+
 </template>
 
 <template name="REACT_MINI_APP_TPL_14">
@@ -242,7 +354,15 @@
             </block>
         </view>
     </block>
-  
+
+    <block wx:if="{{item.type === 'text'}}">
+        <text bind:touchstart="{{item.props.onClick || ''}}">
+            <block wx:for="{{item.children}}" wx:key="">
+              <template is="REACT_MINI_APP_TPL_15" data="{{item}}"/>
+            </block>
+        </text>
+    </block>
+
 </template>
 
 

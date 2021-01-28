@@ -1,5 +1,10 @@
 import MP from '../lib/mp';
 
+import Component from '../lib/components'
+
+const { View, Text } = Component
+console.log(Text, View)
+
 const {
   React,
   useState,
@@ -21,12 +26,11 @@ const ClickComponent = () => {
   );
 };
 
-const Component = () => (
-  <view>
-    {'<ClickComponent />'}
+const Demo = () => (
+  <View>
     test
-    fff
-  </view>
+    <Text>text</Text>
+  </View>
 );
 
 Page({
@@ -36,7 +40,7 @@ Page({
   },
 
   onReady() {
-    MP.render(<Component />, this);
+    MP.render(<Demo />, this);
   },
 
 });
