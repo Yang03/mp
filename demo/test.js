@@ -27,7 +27,7 @@ const ClickComponent = () => {
 };
 
 const Demo = () => (
-  <View>
+  <View onClick={() => console.log('onClick')}>
     test
     <Text>text</Text>
   </View>

@@ -12,18 +12,28 @@
     </block>
 
     <block wx:if="{{item.type === 'view'}}">
-        <view bind:touchstart="{{item.props.onClick || ''}}">
-            <block wx:for="{{item.children}}" wx:key="">
-              <template is="REACT_MINI_APP_TPL_<%=(i + 1)%>" data="{{item}}"/>
-            </block>
+        <view wx:if="{{item.props.bindtap}}" bindtap="{{item.props.bindtap}}">
+          <block wx:for="{{item.children}}" wx:key="">
+            <template is="REACT_MINI_APP_TPL_<%=(i + 1)%>" data="{{item}}"/>
+          </block>
+        </view>
+        <view wx:else>
+          <block wx:for="{{item.children}}" wx:key="">
+            <template is="REACT_MINI_APP_TPL_<%=(i + 1)%>" data="{{item}}"/>
+          </block>
         </view>
     </block>
 
     <block wx:if="{{item.type === 'text'}}">
-        <text bind:touchstart="{{item.props.onClick || ''}}">
-            <block wx:for="{{item.children}}" wx:key="">
-              <template is="REACT_MINI_APP_TPL_<%=(i + 1)%>" data="{{item}}"/>
-            </block>
+        <text wx:if="{{item.props.bindtap}}" bindtap="{{item.props.bindtap}}">
+          <block wx:for="{{item.children}}" wx:key="">
+            <template is="REACT_MINI_APP_TPL_<%=(i + 1)%>" data="{{item}}"/>
+          </block>
+        </text>
+        <text wx:else>
+          <block wx:for="{{item.children}}" wx:key="">
+            <template is="REACT_MINI_APP_TPL_<%=(i + 1)%>" data="{{item}}"/>
+          </block>
         </text>
     </block>
 
