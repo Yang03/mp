@@ -13,4 +13,7 @@ react-reconciler
 |                         |                | commitTextUpdate         |                 |
 |                         |                | commitUpdate             |                 |
 |                         |                | resetTextContent         |                 |
-|                         |                | clearContainer         |                 |
+|                         |                | clearContainer           |                 |
+
+
+https://codesandbox.io/s/react-custom-renderer-mm9kl?fontsize=14&file=/src/hostConfig.ts

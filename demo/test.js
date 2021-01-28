@@ -22,11 +22,11 @@ const ClickComponent = () => {
 };
 
 const Component = () => (
-  <div>
+  <view>
     {'<ClickComponent />'}
-with useState below
-    <ClickComponent />
-  </div>
+    test
+    fff
+  </view>
 );
 
 Page({

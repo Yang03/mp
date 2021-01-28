@@ -70,8 +70,8 @@ const HostConfig = {
   },
   // 渲染阶段执行
   shouldSetTextContent: (type, props) => {
-    console.log('shouldSetTextContent')
-    return typeof props.children === 'string' || typeof props.children === 'number';
+    // console.log('shouldSetTextContent', type, typeof props.children)
+    // return typeof props.children === 'string' || typeof props.children === 'number';
   },
   resetTextContent: () => {
     console.log('resetTextContent')
@@ -179,6 +179,7 @@ const  MP = {
       container._rootContainer = mpRender.createContainer(container, false);
     }
 
+    console.log(reactElement)
     // update the root Container
     return mpRender.updateContainer(reactElement, container._rootContainer, null, callback);
   }
