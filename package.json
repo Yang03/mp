@@ -1,0 +1,43 @@
+{
+  "name": "mp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:tpl": "ejs-cli -f src/base.wxml.ejs > src/base.wxml",
+    "dev": "webpack serve --progress --host 0.0.0.0 --port 3001 --config webpack.config.js --content-base public --history-api-fallback --hot --inline",
+    "watch": "webpack -w",
+    "watch:core": "babel src -d lib -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yang03/mp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yang03/mp/issues"
+  },
+  "homepage": "https://github.com/Yang03/mp#readme",
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-reconciler": "^0.26.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "compression-webpack-plugin": "^7.1.2",
+    "copy-webpack-plugin": "^7.0.0",
+    "create-file-webpack": "^1.0.2",
+    "ejs-cli": "^2.2.1",
+    "html-webpack-plugin": "^4.5.1",
+    "terser-webpack-plugin": "^5.1.1",
+    "webpack": "^5.17.0",
+    "webpack-cli": "^4.4.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
